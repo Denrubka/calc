@@ -266,3 +266,16 @@ select.form__input {
     padding: 9px 12px;
   }
 }
+@media(max-width: 445px) {
+  .calculator-tabs {
+    max-width: 300px;
+  }
+  .calculator__tab {
+    font-size: 14px;
+    max-width: 95px;
+  }
+  .btn {
+    padding: 7px 6px;
+    font-size: 14px;
+  }
+}
