@@ -278,4 +278,19 @@ select.form__input {
     padding: 7px 6px;
     font-size: 14px;
   }
+  .results {
+    padding: 50px 15px;
+    margin: 0;
+  }
+  .calculator-blocks {
+    margin: 0 0 30px;
+  }
+  .calculator-tabs {
+    margin: 0 0 30px;
+  }
+  .table__string--body .table__block span,
+  .table__string--head .table__block span {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
