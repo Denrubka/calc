@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <div class="calculator-tabs">
+    <button class="calculator__tab active">Монтаж</button>
+    <button class="calculator__tab">Сроки</button>
+    <button class="calculator__tab">Доставка</button>
+  </div>
+  <div class="calculator-blocks">
+    <div class="calculator-block active">
+      <form action="/" class="form" id="form-calculator">
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Общая длина, включая ворота и калитку, м:
+          </label>
+          <div class="form__data">
+            <input class="form__input" name="length" id="length" type="text" placeholder="Введите длину">
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Высота забора (профлиста):
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">1.8 м</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Выберите толщину и покрытие:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">С полимерным покр. толщина 0,3мм</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Выберите толщину столба:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Толщина столба 1.5мм</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество горизонталей (лаги):
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Лаги в два ряда</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Покраска:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без грунтовки</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество ворот:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без ворот</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Ширина ворот:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без ворот</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество калиток:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без калитки</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Рассотяние от МКАД:
+          </label>
+          <div class="form__data">
+            <input class="form__input" name="length" id="length" type="text" placeholder="Сколько километров?">
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+      </form>
+      <div class="calculator-btns">
+        <button class="btn btn--calculate">Рассчитать</button>
+        <button class="btn btn--clear">Очистить</button>
+      </div>
+    </div>
+    <div class="calculator-block">
+      <form action="/" class="form" id="form-calculator">
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Общая длина, включая ворота и калитку, м:asdasd
+          </label>
+          <div class="form__data">
+            <input class="form__input" name="length" id="length" type="text" placeholder="Введите длину">
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Высота забора (профлиста):
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">1.8 м</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Выберите толщину и покрытие:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">С полимерным покр. толщина 0,3мм</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Выберите толщину столба:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Толщина столба 1.5мм</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество горизонталей (лаги):
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Лаги в два ряда</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Покраска:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без грунтовки</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество ворот:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без ворот</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Ширина ворот:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без ворот</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество калиток:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без калитки</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Рассотяние от МКАД:
+          </label>
+          <div class="form__data">
+            <input class="form__input" name="length" id="length" type="text" placeholder="Сколько километров?">
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+      </form>
+      <div class="calculator-btns">
+        <button class="btn btn--calculate">Рассчитать</button>
+        <button class="btn btn--clear">Очистить</button>
+      </div>
+    </div>
+    <div class="calculator-block">
+      <form action="/" class="form" id="form-calculator">
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Общая длина, включая ворота и калитку, м:
+          </label>
+          <div class="form__data">
+            <input class="form__input" name="length" id="length" type="text" placeholder="Введите длину">
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Высота забора (профлиста):
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">1.8 м</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Выберите толщину и покрытие:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">С полимерным покр. толщина 0,3мм</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Выберите толщину столба:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Толщина столба 1.5мм</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество горизонталей (лаги):
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Лаги в два ряда</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Покраска:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без грунтовки</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество ворот:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без ворот</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Ширина ворот:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без ворот</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Количество калиток:
+          </label>
+          <div class="form__data">
+            <select class="form__input">
+              <option value="">Без калитки</option>
+              <option value="">Раз два четыре</option>
+              <option value="">Раз три четыре</option>
+            </select>
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+        <div class="form-block">
+          <label class="form__label" for="length">
+            Рассотяние от МКАД:
+          </label>
+          <div class="form__data">
+            <input class="form__input" name="length" id="length" type="text" placeholder="Сколько километров?">
+            <div class="form__img">
+              <img src="./img/info.png" width="5" height="13" alt="info">
+            </div>
+            <span class="tooltip">Тут должен был быть текст</span>
+          </div>
+        </div>
+      </form>
+      <div class="calculator-btns">
+        <button class="btn btn--calculate">Рассчитать</button>
+        <button class="btn btn--clear">Очистить</button>
+      </div>
+    </div>
+  </div>
+  <div class="results">
+    <div class="results-material results-block">
+      <h2 class="results__title">Материалы</h2>
+      <div class="results-material__table table">
+      <div class="table__string table__string--head">
+        <div class="table__block">
+          <span>№</span>
+        </div>
+        <div class="table__block">
+          <span>Наименование</span>
+        </div>
+        <div class="table__block">
+          <span>Ед.изм.</span>
+        </div>
+        <div class="table__block">
+          <span>Кол-во</span>
+        </div>
+        <div class="table__block">
+          <span>Цена</span>
+        </div>
+        <div class="table__block">
+          <span>Сумма</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body">
+        <div class="table__block">
+          <span>1</span>
+        </div>
+        <div class="table__block">
+          <span>Столб 60х60 толщиной 1.5мм h2.8</span>
+        </div>
+        <div class="table__block">
+          <span>шт.</span>
+        </div>
+        <div class="table__block">
+          <span>35</span>
+        </div>
+        <div class="table__block">
+          <span>1055,27 руб.</span>
+        </div>
+        <div class="table__block">
+          <span>35879 руб.</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body">
+        <div class="table__block">
+          <span>2</span>
+        </div>
+        <div class="table__block">
+          <span>Лаги проф.труба 40х20 тощиной 1.5мм</span>
+        </div>
+        <div class="table__block">
+          <span>п.м.</span>
+        </div>
+        <div class="table__block">
+          <span>300</span>
+        </div>
+        <div class="table__block">
+          <span>211,05 руб.</span>
+        </div>
+        <div class="table__block">
+          <span>63316 руб.</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body">
+        <div class="table__block">
+          <span>3</span>
+        </div>
+        <div class="table__block">
+          <span>С полимерным покр. толщина 0.3мм</span>
+        </div>
+        <div class="table__block">
+          <span>м2</span>
+        </div>
+        <div class="table__block">
+          <span>180</span>
+        </div>
+        <div class="table__block">
+          <span>580,99 руб.</span>
+        </div>
+        <div class="table__block">
+          <span>104 631 руб.</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body">
+        <div class="table__block">
+          <span>4</span>
+        </div>
+        <div class="table__block">
+          <span>Саморезы оцинкованные в цвет профнастила</span>
+        </div>
+        <div class="table__block">
+          <span>м2</span>
+        </div>
+        <div class="table__block">
+          <span>180</span>
+        </div>
+        <div class="table__block">
+          <span>580,99 руб.</span>
+        </div>
+        <div class="table__block">
+          <span>104 631 руб.</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body">
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span class="table--special">СКИДКА 5% от стоимости материала</span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span>10 191 руб.</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body table__string--total">
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span class="table--special table--total">Итог за материалы</span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span class="table--special">193 635 руб.</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="results-services results-block">
+      <h2 class="results__title">Услуги</h2>
+      <div class="results-services__table table">
+      <div class="table__string table__string--head">
+        <div class="table__block">
+          <span>№</span>
+        </div>
+        <div class="table__block">
+          <span>Наименование</span>
+        </div>
+        <div class="table__block">
+          <span>Ед.изм.</span>
+        </div>
+        <div class="table__block">
+          <span>Кол-во</span>
+        </div>
+        <div class="table__block">
+          <span>Цена</span>
+        </div>
+        <div class="table__block">
+          <span>Сумма</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body">
+        <div class="table__block">
+          <span>1</span>
+        </div>
+        <div class="table__block">
+          <span>Установка забор из профлиста “Эконом” 1.8м</span>
+        </div>
+        <div class="table__block">
+          <span>п.м.</span>
+        </div>
+        <div class="table__block">
+          <span>100</span>
+        </div>
+        <div class="table__block">
+          <span>1067 руб.</span>
+        </div>
+        <div class="table__block">
+          <span>106 713 руб.</span>
+        </div>
+      </div>
+      <div class="table__string table__string--body table__string--total">
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span class="table--special table--total">Итог за материалы</span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span></span>
+        </div>
+        <div class="table__block">
+          <span class="table--special">193 635 руб.</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="results-delivery results-block">
+      <h2 class="results__title">Доставка</h2>
+      <span class="results-delivery__span">Для Вашего забора Доставка до 100 км от МКАД в подарок!</span>
+    </div>
+    <button class="btn">Рассчитать снова</button>
+  </div>
+</body>
+</html>
